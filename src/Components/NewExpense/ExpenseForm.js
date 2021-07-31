@@ -32,7 +32,7 @@ const ExpenseForm = (props) => {
     const enteredExpense = {
       name: userInputs.enteredName,
       amount: userInputs.enteredAmount,
-      date: userInputs.enteredDate,
+      date: new Date(userInputs.enteredDate),
     };
     props.onSaveExpense(enteredExpense);
   };
@@ -44,6 +44,7 @@ const ExpenseForm = (props) => {
           <label>Name</label>
           <input
             type="text"
+            required={true}
             value={userInputs.enteredName}
             onChange={nameInputHandler}
           />
@@ -52,6 +53,7 @@ const ExpenseForm = (props) => {
           <label>Amount</label>
           <input
             type="number"
+            required={true}
             value={userInputs.enteredAmount}
             min="0.01"
             step="0.01"
@@ -62,6 +64,7 @@ const ExpenseForm = (props) => {
           <label>Date</label>
           <input
             type="date"
+            required={true}
             value={userInputs.enteredDate}
             min="2019-01-01"
             max="2022-12-31"
