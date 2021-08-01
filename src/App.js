@@ -9,17 +9,17 @@ const DUMMY_EXPENSES = [
     amount: 934.12,
     date: new Date(2020, 7, 14),
   },
-  { id: "e2", name: "New TV", amount: 23799.49, date: new Date(2021, 7, 23) },
+  { id: "e2", name: "New TV", amount: 23799.49, date: new Date(2021, 4, 23) },
   {
     id: "e3",
     name: "Car Insurance",
-    amount: 8064.67,
-    date: new Date(2021, 2, 28),
+    amount: 12064.67,
+    date: new Date(2021, 1, 28),
   },
   {
     id: "e4",
     name: "New Desk (Wooden)",
-    amount: 2000,
+    amount: 8000,
     date: new Date(2021, 5, 12),
   },
 ];
