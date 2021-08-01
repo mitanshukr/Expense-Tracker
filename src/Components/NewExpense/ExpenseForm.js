@@ -29,13 +29,17 @@ const ExpenseForm = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
-
     const enteredExpense = {
       name: userInputs.enteredName,
-      amount: userInputs.enteredAmount,
+      amount: parseInt(userInputs.enteredAmount),
       date: new Date(userInputs.enteredDate),
     };
     props.onSaveExpense(enteredExpense);
+    setUserInputs({
+      enteredName: "",
+      enteredAmount: "",
+      enteredDate: "",
+    });
   };
 
   const formStatusToggler = () => {
@@ -84,7 +88,9 @@ const ExpenseForm = (props) => {
             </div>
           </div>
           <div className="new-expense__actions">
-            <button type="button" onClick={formStatusToggler}>Cancel</button>
+            <button type="button" onClick={formStatusToggler}>
+              Cancel
+            </button>
             <button type="submit">Add Expense</button>
           </div>
         </form>
