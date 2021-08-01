@@ -3,8 +3,8 @@ This is a React practice project to brush-up the essential and basic concepts, b
 
 ### Project Activities:
 1. Create-react-app
-2. React Functional Components
-3. React State : useState()
+2. React Functional Components and JSX
+3. React State : useState() and props
 4. Events Handlings (OnChange, OnSubmit, etc.)
 5. Conditional Element and List Rendering
 6. Core JavaScript and Logical Thinking
