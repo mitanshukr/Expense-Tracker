@@ -11,6 +11,6 @@ This is a React practice project to brush-up the essential and basic concepts, b
 7. HTML and CSS
 
 
-Project idea from Academind's Complete React Course.
+_Project idea from Academind's Complete React Course._
 
 Thank you!
