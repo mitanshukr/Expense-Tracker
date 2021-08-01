@@ -91,7 +91,9 @@ const ExpenseForm = (props) => {
             <button type="button" onClick={formStatusToggler}>
               Cancel
             </button>
-            <button type="submit">Add Expense</button>
+            <button type="submit" onClick={formStatusToggler}>
+              Add Expense
+            </button>
           </div>
         </form>
       ) : (
